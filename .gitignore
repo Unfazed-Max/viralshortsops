@@ -1,0 +1,31 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+*.log
+
+# Build outputs
+dist
+.next
+out
+*.tsbuildinfo
+
+# Environment
+.env
+.env*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temp
+tmp
+temp
+*.tmp
