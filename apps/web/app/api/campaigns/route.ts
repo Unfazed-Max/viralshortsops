@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
         name: data.name,
         niche: data.niche,
         primaryLang: data.primaryLang,
-        config: data.config as any,
+        config: data.config as object,
         status: 'DRAFT',
       },
     });
@@ -41,7 +41,7 @@ export async function GET() {
     });
 
     return NextResponse.json(campaigns);
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Internal error' }, { status: 500 });
   }
 }

@@ -2,7 +2,7 @@ import { Queue, Worker, QueueEvents } from 'bullmq';
 import Redis from 'ioredis';
 import { env, logger } from '@viralshortsops/utils';
 
-const connection = new Redis(env.REDIS_URL, {
+const connection = new Redis(env.REDIS_URL || 'redis://localhost:6379', {
   maxRetriesPerRequest: null,
 });
 

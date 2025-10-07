@@ -2,9 +2,15 @@
 
 import { useState } from 'react';
 
+interface Campaign {
+  id: string;
+  name: string;
+  niche: string;
+}
+
 export default function DashboardPage() {
   // const [campaigns, setCampaigns] = useState([]);
-  const campaigns: any[] = [];
+  const campaigns: Campaign[] = [];
   const [showCreateForm, setShowCreateForm] = useState(false);
 
   return (
@@ -109,7 +115,7 @@ export default function DashboardPage() {
         )}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-          {campaigns.map((campaign: any) => (
+          {campaigns.map((campaign) => (
             <div key={campaign.id} className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {campaign.name}

@@ -13,7 +13,7 @@
     "studio": "prisma studio"
   },
   "dependencies": {
-    "@prisma/client": "^5.7.1",
+    "@prisma/client": "^5.22.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {

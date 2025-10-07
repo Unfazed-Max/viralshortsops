@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
         name: data.name,
         slug: data.slug,
         ownerId: userId,
-        quotas: getQuotasForPlan('FREE') as any,
+        quotas: getQuotasForPlan('FREE') as object,
         members: {
           create: {
             userId,

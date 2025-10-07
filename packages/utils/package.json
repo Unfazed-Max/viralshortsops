@@ -8,6 +8,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@viralshortsops/db": "workspace:*",
     "zod": "^3.22.4",
     "crypto-js": "^4.2.0",
     "pino": "^8.17.2",
