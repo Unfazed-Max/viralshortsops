@@ -1,0 +1,56 @@
+{
+  "name": "viralshortsops",
+  "version": "1.0.0",
+  "description": "Auto-generate and post short-form viral videos",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio"
+  },
+  "keywords": [
+    "saas",
+    "video",
+    "automation",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.10.0",
+    "@aws-sdk/client-s3": "^3.901.0",
+    "@aws-sdk/s3-request-presigner": "^3.901.0",
+    "@prisma/client": "^6.16.3",
+    "@types/aws-sdk": "^0.0.42",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^24.7.0",
+    "@types/react": "^19.2.1",
+    "@types/react-dom": "^19.2.0",
+    "autoprefixer": "^10.4.21",
+    "aws-sdk": "^2.1692.0",
+    "bcryptjs": "^3.0.2",
+    "clsx": "^2.1.1",
+    "ioredis": "^5.8.1",
+    "next": "^15.5.4",
+    "next-auth": "^5.0.0-beta.29",
+    "postcss": "^8.5.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "redis": "^5.8.3",
+    "stripe": "^19.1.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@tailwindcss/typography": "^0.5.19",
+    "eslint": "^9.37.0",
+    "eslint-config-next": "^15.5.4",
+    "prisma": "^6.16.3"
+  }
+}
