@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "dom", "dom.iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@viralshortsops/core": ["./packages/core/src"],
+      "@viralshortsops/core/*": ["./packages/core/src/*"],
+      "@viralshortsops/db": ["./packages/db/src"],
+      "@viralshortsops/db/*": ["./packages/db/src/*"],
+      "@viralshortsops/providers": ["./packages/providers/src"],
+      "@viralshortsops/providers/*": ["./packages/providers/src/*"],
+      "@viralshortsops/queue": ["./packages/queue/src"],
+      "@viralshortsops/queue/*": ["./packages/queue/src/*"],
+      "@viralshortsops/contracts": ["./packages/contracts/src"],
+      "@viralshortsops/contracts/*": ["./packages/contracts/src/*"],
+      "@viralshortsops/utils": ["./packages/utils/src"],
+      "@viralshortsops/utils/*": ["./packages/utils/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", ".next", "coverage"]
+}
