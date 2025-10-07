@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   try {
     // TODO: Get orgId from session
     const orgId = 'temp-org-id';

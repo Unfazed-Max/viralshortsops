@@ -4,11 +4,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 // Mock Sora API adapter (feature-flagged)
 export class SoraProvider implements VideoProvider {
-  private apiKey: string;
   private enabled: boolean;
 
-  constructor(apiKey?: string, enabled = false) {
-    this.apiKey = apiKey || 'mock-sora-key';
+  constructor(_apiKey?: string, enabled = false) {
     this.enabled = enabled;
   }
 

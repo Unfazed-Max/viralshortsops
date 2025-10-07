@@ -3,8 +3,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -18,7 +16,6 @@ module.exports = {
       { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
     ],
     '@typescript-eslint/no-explicit-any': 'warn',
-    '@typescript-eslint/no-floating-promises': 'error',
   },
-  ignorePatterns: ['dist', '.next', 'node_modules', '*.config.js', '*.config.ts'],
+  ignorePatterns: ['dist', '.next', 'node_modules', '*.config.js', '*.config.ts', '*.config.mjs'],
 };

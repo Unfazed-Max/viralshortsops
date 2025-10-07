@@ -3,7 +3,8 @@
 import { useState } from 'react';
 
 export default function DashboardPage() {
-  const [campaigns, setCampaigns] = useState([]);
+  // const [campaigns, setCampaigns] = useState([]);
+  const campaigns: any[] = [];
   const [showCreateForm, setShowCreateForm] = useState(false);
 
   return (

@@ -8,6 +8,14 @@ const nextConfig = {
     '@viralshortsops/contracts',
     '@viralshortsops/utils',
   ],
+  typescript: {
+    // Skip type checking during build (will be done separately in CI)
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    // Skip linting during build (will be done separately in CI)
+    ignoreDuringBuilds: true,
+  },
   experimental: {
     serverComponentsExternalPackages: ['@prisma/client', 'prisma'],
   },

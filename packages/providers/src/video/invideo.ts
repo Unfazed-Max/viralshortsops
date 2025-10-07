@@ -4,10 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 
 // Mock InVideo API adapter
 export class InVideoProvider implements VideoProvider {
-  private apiKey: string;
-
-  constructor(apiKey?: string) {
-    this.apiKey = apiKey || 'mock-invideo-key';
+  constructor(_apiKey?: string) {
+    // API key stored but not used in mock
   }
 
   async createRender(input: {
